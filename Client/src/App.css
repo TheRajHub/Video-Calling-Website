@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.grid-item {
+  border-radius: 25px;
+  text-align: center;
+}
+
+.webcam-video {
+  border-radius: 25px;
+  width: 100%;
+}
+
+/* When one grid-item is visible, it takes up the full width */
+.grid-container .grid-item:not(.hidden) {
+  grid-column: span 1; /* Single div takes up full width */
+}
+
+/* If two items are visible, each takes half the width */
+.grid-container .grid-item:not(.hidden):nth-child(-n+1) {
+  grid-column: span 1; /* They will equally share the width */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.hidden {
+  display: none;
+} 
+
+#svg{
+  margin-left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 7vw;
+  background-color: #444343b6;
+  border-radius: 25px;
+}
