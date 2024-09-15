@@ -50,10 +50,6 @@ This project is a **simple video calling application** built with **Socket.IO** 
 - 📈 Support for **multiple clients** using advanced topologies like SFU (Selective Forwarding Unit) or MCU (Multipoint Control Unit).
 - 🖌️ Improved user interface for a smoother experience.
 
-## 📄 License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
-
----
 
 Happy coding! 🎉
