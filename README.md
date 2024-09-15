@@ -25,23 +25,23 @@ This project is a **simple video calling application** built with **Socket.IO** 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/videocall-website.git
-    cd videocall-website
+    https://github.com/TheRajHub/Video-Calling-Website.git
     ```
 
-2. **Install dependencies**:
+2. **Start the server**:
     ```bash
-    npm install
+    node server.js
     ```
 
-3. **Start the server**:
+3. **Start the React-Client**:
     ```bash
-    npm start
+    cd Client
+    npm run dev
     ```
 
 4. **Open your browser** and navigate to:
     ```
-    http://localhost:3000
+    http://localhost:5173
     ```
    Start a video call by opening the URL in two separate tabs or browsers.
 
