@@ -58,6 +58,7 @@ io.on('connection',(socket)=>{
         }
         socket.leave('room')
         socket.to('room').emit('dis')
+        socket.disconnect(true)
         
         
         
