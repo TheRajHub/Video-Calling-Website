@@ -52,10 +52,32 @@ io.on('connection',(socket)=>{
         socket.to('room').emit('answer',data)
     })
     socket.on('dis',()=>{
+        const index = sockett.indexOf(socket.id);
+        if (index > -1) { // only splice array when item is found
+            sockett.splice(index, 1); // 2nd parameter means remove one item only
+        }
         socket.leave('room')
         socket.to('room').emit('dis')
+        
+        
+        
+    })
+    socket.on('disconnect',()=>{
+        const index = sockett.indexOf(socket.id);
+            if (index > -1) { // only splice array when item is found
+                sockett.splice(index, 1); // 2nd parameter means remove one item only
+            }
+        socket.leave('room')
+        socket.to('room').emit('dis')
+        
+        
     })
 })
+
+
+
+
+
 
 server.listen(8000,()=>{
     console.log("Hello..")
